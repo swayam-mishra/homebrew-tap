@@ -5,14 +5,14 @@
 class Junto < Formula
   desc "Watch media in sync with friends — no server, no account"
   homepage "https://github.com/swayam-mishra/junto"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   depends_on "mpv"
 
   on_macos do
-    url "https://github.com/swayam-mishra/junto/releases/download/v1.1.0/junto_1.1.0_darwin_all.tar.gz"
-    sha256 "017a6343720eb9009a29428deda529b3931764a6c5721999f04e2f374b0d164b"
+    url "https://github.com/swayam-mishra/junto/releases/download/v1.2.0/junto_1.2.0_darwin_all.tar.gz"
+    sha256 "d650774027f410736e90cb1f5ac8583cd26b9f0b2bcf36ef639c01c03518082b"
 
     define_method(:install) do
       bin.install "junto"
@@ -21,15 +21,15 @@ class Junto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swayam-mishra/junto/releases/download/v1.1.0/junto_1.1.0_linux_amd64.tar.gz"
-      sha256 "fa178824986fd17f3de6354f20fc61a183fafb6669244abde1d904a9b3038cbc"
+      url "https://github.com/swayam-mishra/junto/releases/download/v1.2.0/junto_1.2.0_linux_amd64.tar.gz"
+      sha256 "00e8334b3b32a6dc8f3aff78198cb8673f3e0fc8a3cf2bc3ce8e2f2f4add045a"
       define_method(:install) do
         bin.install "junto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/swayam-mishra/junto/releases/download/v1.1.0/junto_1.1.0_linux_arm64.tar.gz"
-      sha256 "e54f565b053bffcd5b666a36827346120969f09c470e12d91eebb439f813075d"
+      url "https://github.com/swayam-mishra/junto/releases/download/v1.2.0/junto_1.2.0_linux_arm64.tar.gz"
+      sha256 "3b8fbd677da8a881ce6b4fd830f99cfa823d413395fa0c4872af5f49b82d3611"
       define_method(:install) do
         bin.install "junto"
       end
